@@ -3,273 +3,306 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 56;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		110000000000000000000001 /* FamiljekollApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000000000000000000000001 /* FamiljekollApp.swift */; };
+		110000000000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000000000000000000000002 /* ContentView.swift */; };
+		110000000000000000000003 /* DaySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000000000000000000000003 /* DaySection.swift */; };
+		110000000000000000000004 /* EventCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000000000000000000000004 /* EventCard.swift */; };
+		110000000000000000000005 /* StateCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000000000000000000000005 /* StateCards.swift */; };
+		110000000000000000000006 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000000000000000000000006 /* SettingsView.swift */; };
+		110000000000000000000007 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000000000000000000000007 /* CalendarViewModel.swift */; };
+		120000000000000000000001 /* FamilyCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000000000000000000001 /* FamilyCategory.swift */; };
+		120000000000000000000002 /* FamilyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000000000000000000002 /* FamilyEvent.swift */; };
+		120000000000000000000003 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000000000000000000003 /* PreviewData.swift */; };
+		120000000000000000000004 /* FamilyTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000000000000000000004 /* FamilyTheme.swift */; };
+		120000000000000000000005 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000000000000000000005 /* AppConfiguration.swift */; };
+		120000000000000000000006 /* EventPrioritizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000000000000000000006 /* EventPrioritizer.swift */; };
+		120000000000000000000007 /* EventCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000000000000000000007 /* EventCache.swift */; };
+		120000000000000000000008 /* SheetAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000000000000000000008 /* SheetAPIClient.swift */; };
+		130000000000000000000001 /* FamilyCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000000000000000000001 /* FamilyCategory.swift */; };
+		130000000000000000000002 /* FamilyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000000000000000000002 /* FamilyEvent.swift */; };
+		130000000000000000000003 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000000000000000000003 /* PreviewData.swift */; };
+		130000000000000000000004 /* FamilyTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000000000000000000004 /* FamilyTheme.swift */; };
+		130000000000000000000005 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000000000000000000005 /* AppConfiguration.swift */; };
+		130000000000000000000006 /* EventPrioritizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000000000000000000006 /* EventPrioritizer.swift */; };
+		130000000000000000000007 /* EventCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000000000000000000007 /* EventCache.swift */; };
+		130000000000000000000008 /* SheetAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000000000000000000008 /* SheetAPIClient.swift */; };
+		140000000000000000000001 /* FamiljekollWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D000000000000000000000001 /* FamiljekollWidgetBundle.swift */; };
+		140000000000000000000002 /* FamiljekollWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D000000000000000000000002 /* FamiljekollWidget.swift */; };
+		140000000000000000000003 /* FamiljekollWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D000000000000000000000003 /* FamiljekollWidgetView.swift */; };
+		150000000000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E000000000000000000000001 /* Assets.xcassets */; };
+		150000000000000000000002 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = E000000000000000000000002 /* PrivacyInfo.xcprivacy */; };
+		150000000000000000000003 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = E000000000000000000000002 /* PrivacyInfo.xcprivacy */; };
+		160000000000000000000001 /* FamiljekollWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F000000000000000000000002 /* FamiljekollWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
-		6A1F94033092772900B695E1 /* PBXContainerItemProxy */ = {
+		210000000000000000000001 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6A1F93EA3092772700B695E1 /* Project object */;
+			containerPortal = A000000000000000000000001 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6A1F93F13092772700B695E1;
-			remoteInfo = Familjekoll;
-		};
-		6A1F940D3092772900B695E1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6A1F93EA3092772700B695E1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6A1F93F13092772700B695E1;
-			remoteInfo = Familjekoll;
+			remoteGlobalIDString = T000000000000000000000002;
+			remoteInfo = FamiljekollWidgetExtension;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		P000000000000000000000004 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				160000000000000000000001 /* FamiljekollWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		6A1F93F23092772700B695E1 /* Familjekoll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Familjekoll.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A1F94023092772900B695E1 /* FamiljekollTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FamiljekollTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A1F940C3092772900B695E1 /* FamiljekollUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FamiljekollUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B000000000000000000000001 /* FamiljekollApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/FamiljekollApp.swift; sourceTree = "<group>"; };
+		B000000000000000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/ContentView.swift; sourceTree = "<group>"; };
+		B000000000000000000000003 /* DaySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/DaySection.swift; sourceTree = "<group>"; };
+		B000000000000000000000004 /* EventCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/EventCard.swift; sourceTree = "<group>"; };
+		B000000000000000000000005 /* StateCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/StateCards.swift; sourceTree = "<group>"; };
+		B000000000000000000000006 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/SettingsView.swift; sourceTree = "<group>"; };
+		B000000000000000000000007 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels/CalendarViewModel.swift; sourceTree = "<group>"; };
+		C000000000000000000000001 /* FamilyCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/FamilyCategory.swift; sourceTree = "<group>"; };
+		C000000000000000000000002 /* FamilyEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/FamilyEvent.swift; sourceTree = "<group>"; };
+		C000000000000000000000003 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/PreviewData.swift; sourceTree = "<group>"; };
+		C000000000000000000000004 /* FamilyTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design/FamilyTheme.swift; sourceTree = "<group>"; };
+		C000000000000000000000005 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/AppConfiguration.swift; sourceTree = "<group>"; };
+		C000000000000000000000006 /* EventPrioritizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/EventPrioritizer.swift; sourceTree = "<group>"; };
+		C000000000000000000000007 /* EventCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/EventCache.swift; sourceTree = "<group>"; };
+		C000000000000000000000008 /* SheetAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/SheetAPIClient.swift; sourceTree = "<group>"; };
+		D000000000000000000000001 /* FamiljekollWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamiljekollWidgetBundle.swift; sourceTree = "<group>"; };
+		D000000000000000000000002 /* FamiljekollWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamiljekollWidget.swift; sourceTree = "<group>"; };
+		D000000000000000000000003 /* FamiljekollWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamiljekollWidgetView.swift; sourceTree = "<group>"; };
+		E000000000000000000000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
+		E000000000000000000000002 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Resources/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		E000000000000000000000003 /* Familjekoll.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Familjekoll.entitlements; sourceTree = "<group>"; };
+		E000000000000000000000004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E000000000000000000000005 /* FamiljekollWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FamiljekollWidget.entitlements; sourceTree = "<group>"; };
+		E000000000000000000000006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F000000000000000000000001 /* Familjekoll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Familjekoll.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F000000000000000000000002 /* FamiljekollWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FamiljekollWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		6A1F93F43092772700B695E1 /* Familjekoll */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Familjekoll;
-			sourceTree = "<group>";
-		};
-		6A1F94053092772900B695E1 /* FamiljekollTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FamiljekollTests;
-			sourceTree = "<group>";
-		};
-		6A1F940F3092772900B695E1 /* FamiljekollUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FamiljekollUITests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
-
 /* Begin PBXFrameworksBuildPhase section */
-		6A1F93EF3092772700B695E1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6A1F93FF3092772900B695E1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6A1F94093092772900B695E1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+		P000000000000000000000003 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		P000000000000000000000007 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6A1F93E93092772700B695E1 = {
+		A000000000000000000000002 = {
 			isa = PBXGroup;
 			children = (
-				6A1F93F43092772700B695E1 /* Familjekoll */,
-				6A1F94053092772900B695E1 /* FamiljekollTests */,
-				6A1F940F3092772900B695E1 /* FamiljekollUITests */,
-				6A1F93F33092772700B695E1 /* Products */,
+				A000000000000000000000004 /* Familjekoll */,
+				A000000000000000000000006 /* FamiljekollWidget */,
+				A000000000000000000000003 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6A1F93F33092772700B695E1 /* Products */ = {
+		A000000000000000000000003 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6A1F93F23092772700B695E1 /* Familjekoll.app */,
-				6A1F94023092772900B695E1 /* FamiljekollTests.xctest */,
-				6A1F940C3092772900B695E1 /* FamiljekollUITests.xctest */,
+				F000000000000000000000001 /* Familjekoll.app */,
+				F000000000000000000000002 /* FamiljekollWidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A000000000000000000000004 /* Familjekoll */ = {
+			isa = PBXGroup;
+			children = (
+				B000000000000000000000001 /* FamiljekollApp.swift */,
+				B000000000000000000000002 /* ContentView.swift */,
+				B000000000000000000000003 /* DaySection.swift */,
+				B000000000000000000000004 /* EventCard.swift */,
+				B000000000000000000000005 /* StateCards.swift */,
+				B000000000000000000000006 /* SettingsView.swift */,
+				B000000000000000000000007 /* CalendarViewModel.swift */,
+				A000000000000000000000005 /* Shared */,
+				E000000000000000000000001 /* Assets.xcassets */,
+				E000000000000000000000002 /* PrivacyInfo.xcprivacy */,
+				E000000000000000000000003 /* Familjekoll.entitlements */,
+				E000000000000000000000004 /* Info.plist */,
+			);
+			path = Familjekoll;
+			sourceTree = "<group>";
+		};
+		A000000000000000000000005 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C000000000000000000000001 /* FamilyCategory.swift */,
+				C000000000000000000000002 /* FamilyEvent.swift */,
+				C000000000000000000000003 /* PreviewData.swift */,
+				C000000000000000000000004 /* FamilyTheme.swift */,
+				C000000000000000000000005 /* AppConfiguration.swift */,
+				C000000000000000000000006 /* EventPrioritizer.swift */,
+				C000000000000000000000007 /* EventCache.swift */,
+				C000000000000000000000008 /* SheetAPIClient.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A000000000000000000000006 /* FamiljekollWidget */ = {
+			isa = PBXGroup;
+			children = (
+				D000000000000000000000001 /* FamiljekollWidgetBundle.swift */,
+				D000000000000000000000002 /* FamiljekollWidget.swift */,
+				D000000000000000000000003 /* FamiljekollWidgetView.swift */,
+				E000000000000000000000005 /* FamiljekollWidget.entitlements */,
+				E000000000000000000000006 /* Info.plist */,
+			);
+			path = FamiljekollWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6A1F93F13092772700B695E1 /* Familjekoll */ = {
+		T000000000000000000000001 /* Familjekoll */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A1F94163092772900B695E1 /* Build configuration list for PBXNativeTarget "Familjekoll" */;
+			buildConfigurationList = Q000000000000000000000013 /* Build configuration list for PBXNativeTarget "Familjekoll" */;
 			buildPhases = (
-				6A1F93EE3092772700B695E1 /* Sources */,
-				6A1F93EF3092772700B695E1 /* Frameworks */,
-				6A1F93F03092772700B695E1 /* Resources */,
+				P000000000000000000000001 /* Sources */,
+				P000000000000000000000003 /* Frameworks */,
+				P000000000000000000000002 /* Resources */,
+				P000000000000000000000004 /* Embed Foundation Extensions */,
 			);
-			buildRules = (
-			);
+			buildRules = ();
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				6A1F93F43092772700B695E1 /* Familjekoll */,
+				220000000000000000000001 /* PBXTargetDependency */,
 			);
 			name = Familjekoll;
-			packageProductDependencies = (
-			);
+			packageProductDependencies = ();
 			productName = Familjekoll;
-			productReference = 6A1F93F23092772700B695E1 /* Familjekoll.app */;
+			productReference = F000000000000000000000001 /* Familjekoll.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6A1F94013092772900B695E1 /* FamiljekollTests */ = {
+		T000000000000000000000002 /* FamiljekollWidgetExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A1F94193092772900B695E1 /* Build configuration list for PBXNativeTarget "FamiljekollTests" */;
+			buildConfigurationList = Q000000000000000000000023 /* Build configuration list for PBXNativeTarget "FamiljekollWidgetExtension" */;
 			buildPhases = (
-				6A1F93FE3092772900B695E1 /* Sources */,
-				6A1F93FF3092772900B695E1 /* Frameworks */,
-				6A1F94003092772900B695E1 /* Resources */,
+				P000000000000000000000005 /* Sources */,
+				P000000000000000000000007 /* Frameworks */,
+				P000000000000000000000006 /* Resources */,
 			);
-			buildRules = (
-			);
-			dependencies = (
-				6A1F94043092772900B695E1 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				6A1F94053092772900B695E1 /* FamiljekollTests */,
-			);
-			name = FamiljekollTests;
-			packageProductDependencies = (
-			);
-			productName = FamiljekollTests;
-			productReference = 6A1F94023092772900B695E1 /* FamiljekollTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		6A1F940B3092772900B695E1 /* FamiljekollUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6A1F941C3092772900B695E1 /* Build configuration list for PBXNativeTarget "FamiljekollUITests" */;
-			buildPhases = (
-				6A1F94083092772900B695E1 /* Sources */,
-				6A1F94093092772900B695E1 /* Frameworks */,
-				6A1F940A3092772900B695E1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6A1F940E3092772900B695E1 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				6A1F940F3092772900B695E1 /* FamiljekollUITests */,
-			);
-			name = FamiljekollUITests;
-			packageProductDependencies = (
-			);
-			productName = FamiljekollUITests;
-			productReference = 6A1F940C3092772900B695E1 /* FamiljekollUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			buildRules = ();
+			dependencies = ();
+			name = FamiljekollWidgetExtension;
+			packageProductDependencies = ();
+			productName = FamiljekollWidgetExtension;
+			productReference = F000000000000000000000002 /* FamiljekollWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6A1F93EA3092772700B695E1 /* Project object */ = {
+		A000000000000000000000001 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					6A1F93F13092772700B695E1 = {
-						CreatedOnToolsVersion = 16.2;
-					};
-					6A1F94013092772900B695E1 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 6A1F93F13092772700B695E1;
-					};
-					6A1F940B3092772900B695E1 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 6A1F93F13092772700B695E1;
-					};
+					T000000000000000000000001 = { CreatedOnToolsVersion = 16.2; };
+					T000000000000000000000002 = { CreatedOnToolsVersion = 16.2; };
 				};
 			};
-			buildConfigurationList = 6A1F93ED3092772700B695E1 /* Build configuration list for PBXProject "Familjekoll" */;
-			developmentRegion = en;
+			buildConfigurationList = Q000000000000000000000003 /* Build configuration list for PBXProject "Familjekoll" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = sv;
 			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 6A1F93E93092772700B695E1;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
-			productRefGroup = 6A1F93F33092772700B695E1 /* Products */;
+			knownRegions = (sv, en, Base, );
+			mainGroup = A000000000000000000000002;
+			productRefGroup = A000000000000000000000003 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6A1F93F13092772700B695E1 /* Familjekoll */,
-				6A1F94013092772900B695E1 /* FamiljekollTests */,
-				6A1F940B3092772900B695E1 /* FamiljekollUITests */,
+				T000000000000000000000001 /* Familjekoll */,
+				T000000000000000000000002 /* FamiljekollWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6A1F93F03092772700B695E1 /* Resources */ = {
+		P000000000000000000000002 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				150000000000000000000001 /* Assets.xcassets in Resources */,
+				150000000000000000000002 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6A1F94003092772900B695E1 /* Resources */ = {
+		P000000000000000000000006 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6A1F940A3092772900B695E1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				150000000000000000000003 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6A1F93EE3092772700B695E1 /* Sources */ = {
+		P000000000000000000000001 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				110000000000000000000001 /* FamiljekollApp.swift in Sources */,
+				110000000000000000000002 /* ContentView.swift in Sources */,
+				110000000000000000000003 /* DaySection.swift in Sources */,
+				110000000000000000000004 /* EventCard.swift in Sources */,
+				110000000000000000000005 /* StateCards.swift in Sources */,
+				110000000000000000000006 /* SettingsView.swift in Sources */,
+				110000000000000000000007 /* CalendarViewModel.swift in Sources */,
+				120000000000000000000001 /* FamilyCategory.swift in Sources */,
+				120000000000000000000002 /* FamilyEvent.swift in Sources */,
+				120000000000000000000003 /* PreviewData.swift in Sources */,
+				120000000000000000000004 /* FamilyTheme.swift in Sources */,
+				120000000000000000000005 /* AppConfiguration.swift in Sources */,
+				120000000000000000000006 /* EventPrioritizer.swift in Sources */,
+				120000000000000000000007 /* EventCache.swift in Sources */,
+				120000000000000000000008 /* SheetAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6A1F93FE3092772900B695E1 /* Sources */ = {
+		P000000000000000000000005 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6A1F94083092772900B695E1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				140000000000000000000001 /* FamiljekollWidgetBundle.swift in Sources */,
+				140000000000000000000002 /* FamiljekollWidget.swift in Sources */,
+				140000000000000000000003 /* FamiljekollWidgetView.swift in Sources */,
+				130000000000000000000001 /* FamilyCategory.swift in Sources */,
+				130000000000000000000002 /* FamilyEvent.swift in Sources */,
+				130000000000000000000003 /* PreviewData.swift in Sources */,
+				130000000000000000000004 /* FamilyTheme.swift in Sources */,
+				130000000000000000000005 /* AppConfiguration.swift in Sources */,
+				130000000000000000000006 /* EventPrioritizer.swift in Sources */,
+				130000000000000000000007 /* EventCache.swift in Sources */,
+				130000000000000000000008 /* SheetAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6A1F94043092772900B695E1 /* PBXTargetDependency */ = {
+		220000000000000000000001 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6A1F93F13092772700B695E1 /* Familjekoll */;
-			targetProxy = 6A1F94033092772900B695E1 /* PBXContainerItemProxy */;
-		};
-		6A1F940E3092772900B695E1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6A1F93F13092772700B695E1 /* Familjekoll */;
-			targetProxy = 6A1F940D3092772900B695E1 /* PBXContainerItemProxy */;
+			target = T000000000000000000000002 /* FamiljekollWidgetExtension */;
+			targetProxy = 210000000000000000000001 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		6A1F94143092772900B695E1 /* Debug */ = {
+		Q000000000000000000000001 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -279,8 +312,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -306,22 +337,18 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)", );
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -332,7 +359,7 @@
 			};
 			name = Debug;
 		};
-		6A1F94153092772900B695E1 /* Release */ = {
+		Q000000000000000000000002 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -342,8 +369,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -369,7 +394,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -378,7 +402,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -388,26 +412,19 @@
 			};
 			name = Release;
 		};
-		6A1F94173092772900B695E1 /* Debug */ = {
+		Q000000000000000000000011 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Familjekoll/Familjekoll.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Familjekoll/Preview Content\"";
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = S6RD9WDV6A;
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Familjekoll/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", );
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = mojo.Familjekoll;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -417,26 +434,19 @@
 			};
 			name = Debug;
 		};
-		6A1F94183092772900B695E1 /* Release */ = {
+		Q000000000000000000000012 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Familjekoll/Familjekoll.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Familjekoll/Preview Content\"";
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = S6RD9WDV6A;
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Familjekoll/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", );
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = mojo.Familjekoll;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -446,118 +456,72 @@
 			};
 			name = Release;
 		};
-		6A1F941A3092772900B695E1 /* Debug */ = {
+		Q000000000000000000000021 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = FamiljekollWidget/FamiljekollWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = S6RD9WDV6A;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FamiljekollWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@executable_path/../../Frameworks", );
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mojo.FamiljekollTests;
+				PRODUCT_BUNDLE_IDENTIFIER = mojo.Familjekoll.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Familjekoll.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Familjekoll";
 			};
 			name = Debug;
 		};
-		6A1F941B3092772900B695E1 /* Release */ = {
+		Q000000000000000000000022 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = FamiljekollWidget/FamiljekollWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = S6RD9WDV6A;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FamiljekollWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@executable_path/../../Frameworks", );
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mojo.FamiljekollTests;
+				PRODUCT_BUNDLE_IDENTIFIER = mojo.Familjekoll.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Familjekoll.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Familjekoll";
-			};
-			name = Release;
-		};
-		6A1F941D3092772900B695E1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = S6RD9WDV6A;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mojo.FamiljekollUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Familjekoll;
-			};
-			name = Debug;
-		};
-		6A1F941E3092772900B695E1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = S6RD9WDV6A;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mojo.FamiljekollUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Familjekoll;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6A1F93ED3092772700B695E1 /* Build configuration list for PBXProject "Familjekoll" */ = {
+		Q000000000000000000000003 /* Build configuration list for PBXProject "Familjekoll" */ = {
 			isa = XCConfigurationList;
-			buildConfigurations = (
-				6A1F94143092772900B695E1 /* Debug */,
-				6A1F94153092772900B695E1 /* Release */,
-			);
+			buildConfigurations = (Q000000000000000000000001 /* Debug */, Q000000000000000000000002 /* Release */, );
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A1F94163092772900B695E1 /* Build configuration list for PBXNativeTarget "Familjekoll" */ = {
+		Q000000000000000000000013 /* Build configuration list for PBXNativeTarget "Familjekoll" */ = {
 			isa = XCConfigurationList;
-			buildConfigurations = (
-				6A1F94173092772900B695E1 /* Debug */,
-				6A1F94183092772900B695E1 /* Release */,
-			);
+			buildConfigurations = (Q000000000000000000000011 /* Debug */, Q000000000000000000000012 /* Release */, );
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A1F94193092772900B695E1 /* Build configuration list for PBXNativeTarget "FamiljekollTests" */ = {
+		Q000000000000000000000023 /* Build configuration list for PBXNativeTarget "FamiljekollWidgetExtension" */ = {
 			isa = XCConfigurationList;
-			buildConfigurations = (
-				6A1F941A3092772900B695E1 /* Debug */,
-				6A1F941B3092772900B695E1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6A1F941C3092772900B695E1 /* Build configuration list for PBXNativeTarget "FamiljekollUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6A1F941D3092772900B695E1 /* Debug */,
-				6A1F941E3092772900B695E1 /* Release */,
-			);
+			buildConfigurations = (Q000000000000000000000021 /* Debug */, Q000000000000000000000022 /* Release */, );
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6A1F93EA3092772700B695E1 /* Project object */;
+	rootObject = A000000000000000000000001 /* Project object */;
 }
