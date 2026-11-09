@@ -17,16 +17,19 @@ final class CalendarViewModel: ObservableObject {
     private let client: SheetAPIClient
     private let cache: EventCache
     private let prioritizer: EventPrioritizer
+    private let notificationScheduler: NotificationScheduler
     private var hasLoaded = false
 
     init(
         client: SheetAPIClient = SheetAPIClient(),
         cache: EventCache = EventCache(),
-        prioritizer: EventPrioritizer = EventPrioritizer()
+        prioritizer: EventPrioritizer = EventPrioritizer(),
+        notificationScheduler: NotificationScheduler = NotificationScheduler()
     ) {
         self.client = client
         self.cache = cache
         self.prioritizer = prioritizer
+        self.notificationScheduler = notificationScheduler
         self.events = prioritizer.sorted(
             cache.load(),
             preferredCategory: AppConfiguration.preferredCategory
@@ -89,6 +92,8 @@ final class CalendarViewModel: ObservableObject {
             lastUpdated = cache.lastUpdated
         }
 
+        await notificationScheduler.reschedule(events: cachedEvents)
+
         guard isConfigured else {
             state = .needsSetup
             return
@@ -98,10 +103,12 @@ final class CalendarViewModel: ObservableObject {
 
         let calendar = Calendar.current
         let start = calendar.startOfDay(for: Date())
-        let endOfWeek = calendar.date(byAdding: .day, value: 6, to: start) ?? start
+        // En längre hämtning gör att lokala notiser kan schemaläggas även om
+        // appen inte öppnas varje vecka. Vyn visar fortfarande bara sju dagar.
+        let notificationHorizon = calendar.date(byAdding: .day, value: 60, to: start) ?? start
 
         do {
-            let fetched = try await client.fetchEvents(from: start, through: endOfWeek)
+            let fetched = try await client.fetchEvents(from: start, through: notificationHorizon)
             let sorted = prioritizer.sorted(
                 fetched,
                 preferredCategory: AppConfiguration.preferredCategory
@@ -111,6 +118,7 @@ final class CalendarViewModel: ObservableObject {
             cache.save(sorted, updatedAt: lastUpdated ?? Date())
             state = .loaded
             WidgetCenter.shared.reloadAllTimelines()
+            await notificationScheduler.reschedule(events: sorted)
         } catch {
             if events.isEmpty {
                 state = .failed(error.localizedDescription)

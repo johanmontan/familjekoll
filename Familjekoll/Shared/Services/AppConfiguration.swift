@@ -5,6 +5,14 @@ enum AppConfiguration {
     static let endpointKey = "googleAppsScriptEndpoint"
     static let lastUpdatedKey = "lastUpdated"
     static let preferredCategoryKey = "preferredCategory"
+    static let notificationsEnabledKey = "notificationsEnabled"
+    static let notificationRulesKey = "notificationRules"
+    static let notificationTimeMinutesKey = "notificationTimeMinutes"
+
+    static let defaultNotificationRules = [
+        "Tömning av trädgårdsavfall",
+        "Månadsmöte"
+    ]
 
     static var sharedDefaults: UserDefaults {
         UserDefaults(suiteName: appGroup) ?? .standard
@@ -43,5 +51,25 @@ enum AppConfiguration {
                 sharedDefaults.removeObject(forKey: preferredCategoryKey)
             }
         }
+    }
+
+    static var notificationsEnabled: Bool {
+        get { sharedDefaults.object(forKey: notificationsEnabledKey) as? Bool ?? false }
+        set { sharedDefaults.set(newValue, forKey: notificationsEnabledKey) }
+    }
+
+    static var notificationRules: [String] {
+        get { sharedDefaults.stringArray(forKey: notificationRulesKey) ?? defaultNotificationRules }
+        set { sharedDefaults.set(newValue, forKey: notificationRulesKey) }
+    }
+
+    static var notificationTimeMinutes: Int {
+        get {
+            guard sharedDefaults.object(forKey: notificationTimeMinutesKey) != nil else {
+                return 18 * 60
+            }
+            return sharedDefaults.integer(forKey: notificationTimeMinutesKey)
+        }
+        set { sharedDefaults.set(max(0, min(newValue, 23 * 60 + 59)), forKey: notificationTimeMinutesKey) }
     }
 }

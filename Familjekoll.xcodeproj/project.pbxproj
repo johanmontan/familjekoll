@@ -22,6 +22,7 @@
 		120000000000000000000006 /* EventPrioritizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000000000000000000006 /* EventPrioritizer.swift */; };
 		120000000000000000000007 /* EventCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000000000000000000007 /* EventCache.swift */; };
 		120000000000000000000008 /* SheetAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000000000000000000008 /* SheetAPIClient.swift */; };
+		120000000000000000000009 /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000000000000000000009 /* NotificationScheduler.swift */; };
 		130000000000000000000001 /* FamilyCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000000000000000000001 /* FamilyCategory.swift */; };
 		130000000000000000000002 /* FamilyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000000000000000000002 /* FamilyEvent.swift */; };
 		130000000000000000000003 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000000000000000000000003 /* PreviewData.swift */; };
@@ -79,6 +80,7 @@
 		C000000000000000000000006 /* EventPrioritizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/EventPrioritizer.swift; sourceTree = "<group>"; };
 		C000000000000000000000007 /* EventCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/EventCache.swift; sourceTree = "<group>"; };
 		C000000000000000000000008 /* SheetAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/SheetAPIClient.swift; sourceTree = "<group>"; };
+		C000000000000000000000009 /* NotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/NotificationScheduler.swift; sourceTree = "<group>"; };
 		D000000000000000000000001 /* FamiljekollWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamiljekollWidgetBundle.swift; sourceTree = "<group>"; };
 		D000000000000000000000002 /* FamiljekollWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamiljekollWidget.swift; sourceTree = "<group>"; };
 		D000000000000000000000003 /* FamiljekollWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamiljekollWidgetView.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				C000000000000000000000006 /* EventPrioritizer.swift */,
 				C000000000000000000000007 /* EventCache.swift */,
 				C000000000000000000000008 /* SheetAPIClient.swift */,
+				C000000000000000000000009 /* NotificationScheduler.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				120000000000000000000006 /* EventPrioritizer.swift in Sources */,
 				120000000000000000000007 /* EventCache.swift in Sources */,
 				120000000000000000000008 /* SheetAPIClient.swift in Sources */,
+				120000000000000000000009 /* NotificationScheduler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,7 +422,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Familjekoll/Familjekoll.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = S6RD9WDV6A;
 				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
@@ -440,7 +444,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Familjekoll/Familjekoll.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = S6RD9WDV6A;
 				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
@@ -462,7 +466,7 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = FamiljekollWidget/FamiljekollWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = S6RD9WDV6A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
@@ -484,7 +488,7 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = FamiljekollWidget/FamiljekollWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = S6RD9WDV6A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;

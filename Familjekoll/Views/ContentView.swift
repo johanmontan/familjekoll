@@ -33,7 +33,7 @@ struct ContentView: View {
                 }
             }
             .sheet(isPresented: $showingSettings) {
-                SettingsView {
+                SettingsView(events: viewModel.events) {
                     await viewModel.configurationDidChange()
                 }
             }

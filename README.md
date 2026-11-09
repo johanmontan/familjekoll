@@ -10,6 +10,7 @@ Familjekoll är en intern iOS-app som visar familjens viktigaste händelser idag
 - Enkel prioritering med datum, klockslag och viktiga nyckelord.
 - WidgetKit-extension för Small, Medium, Inline, Circular och Rectangular.
 - Delad lokal cache så widgeten kan visa senaste kända data om nätet tillfälligt saknas.
+- Lokala notiser dagen före valda aktiviteter, med egna matchningsregler och valbar tid.
 - Google Apps Script som bara läser kolumner C och E–I från fliken `2022-25`.
 
 ## Anslut Google Sheet
@@ -26,6 +27,14 @@ Familjekoll är en intern iOS-app som visar familjens viktigaste händelser idag
 10. Starta Familjekoll, öppna kugghjulet och klistra in adressen.
 
 Efter kodändringar i Apps Script behöver webbappen distribueras som en ny version. Adressen kan vanligtvis behållas.
+
+## Notiser
+
+Öppna **Inställningar → Notiser** för att aktivera påminnelser. Appen innehåller från början reglerna **Tömning av trädgårdsavfall** och **Månadsmöte**. Du kan skriva egna regler eller välja ett aktivitetsnamn från kalendern i dropdownen.
+
+Matchningen ignorerar stora bokstäver, skiljetecken, diakritiska tecken och vanliga småord. Ordformer som `tömning`, `töms` och `tömma` behandlas likadant, så exempelvis `Trädgårdsavfall töms` matchar den förifyllda regeln.
+
+Notiserna schemaläggs lokalt på telefonen vid vald tid dagen före aktiviteten. När appen uppdateras hämtar den 60 dagar framåt för notisschemaläggningen, medan kalendern i appen fortfarande visar en vecka. Öppna appen med jämna mellanrum så att nya eller ändrade Sheet-poster hinner schemaläggas.
 
 ## Kolumnmappning
 
