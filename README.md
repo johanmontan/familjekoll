@@ -30,7 +30,7 @@ Efter kodändringar i Apps Script behöver webbappen distribueras som en ny vers
 
 ## Notiser
 
-Öppna **Inställningar → Notiser** för att aktivera påminnelser. Appen innehåller från början reglerna **Tömning av trädgårdsavfall** och **Månadsmöte**. Du kan skriva egna regler eller välja ett aktivitetsnamn från kalendern i dropdownen.
+Öppna **Inställningar → Notiser** för att aktivera påminnelser. Förvalda regler täcker bland annat **Tömning av trädgårdsavfall**, **Månadsmöte**, **Emma vinklubb**, **Grundarmöte** samt möten och visningar på Folkets hus. Du kan skriva egna regler eller välja ett aktivitetsnamn från kalendern i dropdownen. En liten klocka på ett kalenderkort visar att en kommande notis är schemalagd.
 
 Matchningen ignorerar stora bokstäver, skiljetecken, diakritiska tecken och vanliga småord. Ordformer som `tömning`, `töms` och `tömma` behandlas likadant, så exempelvis `Trädgårdsavfall töms` matchar den förifyllda regeln.
 

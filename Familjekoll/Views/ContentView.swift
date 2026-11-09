@@ -21,17 +21,6 @@ struct ContentView: View {
                     await viewModel.refresh()
                 }
             }
-            .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button {
-                        showingSettings = true
-                    } label: {
-                        Image(systemName: "gearshape.fill")
-                            .symbolRenderingMode(.hierarchical)
-                    }
-                    .accessibilityLabel("Inställningar")
-                }
-            }
             .sheet(isPresented: $showingSettings) {
                 SettingsView(events: viewModel.events) {
                     await viewModel.configurationDidChange()
@@ -47,9 +36,25 @@ struct ContentView: View {
                 .tracking(1.8)
                 .foregroundStyle(FamilyTheme.accent)
 
-            Text(greeting)
-                .font(.system(.largeTitle, design: .rounded, weight: .bold))
-                .foregroundStyle(FamilyTheme.ink)
+            HStack(alignment: .center, spacing: 12) {
+                Text(greeting)
+                    .font(.system(.largeTitle, design: .rounded, weight: .bold))
+                    .foregroundStyle(FamilyTheme.ink)
+
+                Spacer(minLength: 8)
+
+                Button {
+                    showingSettings = true
+                } label: {
+                    Image(systemName: "gearshape.fill")
+                        .font(.title2)
+                        .symbolRenderingMode(.hierarchical)
+                        .foregroundStyle(FamilyTheme.accent)
+                        .frame(width: 44, height: 44)
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("Inställningar")
+            }
 
             HStack(spacing: 8) {
                 Circle()

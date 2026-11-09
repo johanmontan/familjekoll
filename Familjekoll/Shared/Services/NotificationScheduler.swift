@@ -58,6 +58,35 @@ struct NotificationScheduler: Sendable {
         }
     }
 
+    static func willScheduleNotification(for event: FamilyEvent, now: Date = Date()) -> Bool {
+        guard AppConfiguration.notificationsEnabled,
+              AppConfiguration.notificationRules.contains(where: {
+                  NotificationRuleMatcher.matches(title: event.title, rule: $0)
+              }),
+              let fireDate = fireDate(for: event) else {
+            return false
+        }
+        return fireDate > now
+    }
+
+    private static func fireDate(
+        for event: FamilyEvent,
+        calendar: Calendar = .current
+    ) -> Date? {
+        guard let eventDate = event.localDate,
+              let previousDay = calendar.date(byAdding: .day, value: -1, to: eventDate) else {
+            return nil
+        }
+
+        let notificationTime = AppConfiguration.notificationTimeMinutes
+        return calendar.date(
+            bySettingHour: notificationTime / 60,
+            minute: notificationTime % 60,
+            second: 0,
+            of: previousDay
+        )
+    }
+
     func reschedule(events: [FamilyEvent], now: Date = Date()) async {
         let center = UNUserNotificationCenter.current()
         let pending = await center.pendingNotificationRequests()
@@ -80,9 +109,6 @@ struct NotificationScheduler: Sendable {
         }
 
         let calendar = Calendar.current
-        let notificationTime = AppConfiguration.notificationTimeMinutes
-        let hour = notificationTime / 60
-        let minute = notificationTime % 60
         let rules = AppConfiguration.notificationRules
         var seenEvents = Set<String>()
 
@@ -94,14 +120,7 @@ struct NotificationScheduler: Sendable {
                 ($0.localDate ?? .distantFuture) < ($1.localDate ?? .distantFuture)
             }
             .compactMap { event -> (FamilyEvent, Date)? in
-                guard let eventDate = event.localDate,
-                      let previousDay = calendar.date(byAdding: .day, value: -1, to: eventDate),
-                      let fireDate = calendar.date(
-                        bySettingHour: hour,
-                        minute: minute,
-                        second: 0,
-                        of: previousDay
-                      ),
+                guard let fireDate = Self.fireDate(for: event, calendar: calendar),
                       fireDate > now else {
                     return nil
                 }

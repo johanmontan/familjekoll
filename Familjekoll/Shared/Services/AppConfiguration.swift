@@ -8,11 +8,22 @@ enum AppConfiguration {
     static let notificationsEnabledKey = "notificationsEnabled"
     static let notificationRulesKey = "notificationRules"
     static let notificationTimeMinutesKey = "notificationTimeMinutes"
+    static let notificationRuleDefaultsVersionKey = "notificationRuleDefaultsVersion"
+
+    private static let currentNotificationRuleDefaultsVersion = 1
+    private static let notificationRulesAddedInVersionOne = [
+        "Emma vinklubb",
+        "Grundarmöte",
+        "Folkets hus möte",
+        "Visning Folkets hus",
+        "Folketshus visning",
+        "Folkets hus visning"
+    ]
 
     static let defaultNotificationRules = [
         "Tömning av trädgårdsavfall",
         "Månadsmöte"
-    ]
+    ] + notificationRulesAddedInVersionOne
 
     static var sharedDefaults: UserDefaults {
         UserDefaults(suiteName: appGroup) ?? .standard
@@ -59,8 +70,27 @@ enum AppConfiguration {
     }
 
     static var notificationRules: [String] {
-        get { sharedDefaults.stringArray(forKey: notificationRulesKey) ?? defaultNotificationRules }
-        set { sharedDefaults.set(newValue, forKey: notificationRulesKey) }
+        get {
+            guard var storedRules = sharedDefaults.stringArray(forKey: notificationRulesKey) else {
+                return defaultNotificationRules
+            }
+
+            let storedVersion = sharedDefaults.integer(forKey: notificationRuleDefaultsVersionKey)
+            if storedVersion < currentNotificationRuleDefaultsVersion {
+                for rule in notificationRulesAddedInVersionOne where !storedRules.contains(where: {
+                    $0.compare(rule, options: [.caseInsensitive, .diacriticInsensitive]) == .orderedSame
+                }) {
+                    storedRules.append(rule)
+                }
+                sharedDefaults.set(storedRules, forKey: notificationRulesKey)
+                sharedDefaults.set(currentNotificationRuleDefaultsVersion, forKey: notificationRuleDefaultsVersionKey)
+            }
+            return storedRules
+        }
+        set {
+            sharedDefaults.set(newValue, forKey: notificationRulesKey)
+            sharedDefaults.set(currentNotificationRuleDefaultsVersion, forKey: notificationRuleDefaultsVersionKey)
+        }
     }
 
     static var notificationTimeMinutes: Int {

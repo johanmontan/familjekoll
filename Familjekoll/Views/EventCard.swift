@@ -33,6 +33,14 @@ struct EventCard: View {
             }
 
             Spacer(minLength: 0)
+
+            if NotificationScheduler.willScheduleNotification(for: event) {
+                Image(systemName: "bell.fill")
+                    .font(.system(size: 9, weight: .semibold))
+                    .foregroundStyle(FamilyTheme.secondaryInk.opacity(0.72))
+                    .padding(.top, 3)
+                    .accessibilityLabel("Notis schemalagd")
+            }
         }
         .padding(16)
         .background(FamilyTheme.surface, in: RoundedRectangle(cornerRadius: 20, style: .continuous))
