@@ -59,11 +59,13 @@ struct NotificationScheduler: Sendable {
     }
 
     static func willScheduleNotification(for event: FamilyEvent, now: Date = Date()) -> Bool {
-        guard AppConfiguration.notificationsEnabled,
-              AppConfiguration.notificationRules.contains(where: {
-                  NotificationRuleMatcher.matches(title: event.title, rule: $0)
-              }),
-              let fireDate = fireDate(for: event) else {
+        AppConfiguration.notificationsEnabled && hasConfiguredNotification(for: event, now: now)
+    }
+
+    static func hasConfiguredNotification(for event: FamilyEvent, now: Date = Date()) -> Bool {
+        guard AppConfiguration.notificationRules.contains(where: {
+            NotificationRuleMatcher.matches(title: event.title, rule: $0)
+        }), let fireDate = fireDate(for: event) else {
             return false
         }
         return fireDate > now

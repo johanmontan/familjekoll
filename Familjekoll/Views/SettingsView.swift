@@ -9,7 +9,7 @@ struct SettingsView: View {
     }
 
     @Environment(\.dismiss) private var dismiss
-    @State private var selectedTab: SettingsTab = .general
+    @State private var selectedTab: SettingsTab = .notifications
     @State private var endpoint: String
     @State private var preferredCategory: FamilyCategory?
     @State private var notificationsEnabled: Bool
@@ -41,17 +41,17 @@ struct SettingsView: View {
 
     var body: some View {
         TabView(selection: $selectedTab) {
-            generalSettings
-                .tabItem {
-                    Label("Allmänt", systemImage: "slider.horizontal.3")
-                }
-                .tag(SettingsTab.general)
-
             notificationSettings
                 .tabItem {
                     Label("Notiser", systemImage: "bell.badge")
                 }
                 .tag(SettingsTab.notifications)
+
+            generalSettings
+                .tabItem {
+                    Label("Allmänt", systemImage: "slider.horizontal.3")
+                }
+                .tag(SettingsTab.general)
         }
         .interactiveDismissDisabled(isSaving)
         .task {

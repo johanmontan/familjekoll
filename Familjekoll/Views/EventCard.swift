@@ -34,12 +34,15 @@ struct EventCard: View {
 
             Spacer(minLength: 0)
 
-            if NotificationScheduler.willScheduleNotification(for: event) {
-                Image(systemName: "bell.fill")
-                    .font(.system(size: 9, weight: .semibold))
-                    .foregroundStyle(FamilyTheme.secondaryInk.opacity(0.72))
-                    .padding(.top, 3)
-                    .accessibilityLabel("Notis schemalagd")
+            if NotificationScheduler.hasConfiguredNotification(for: event) {
+                let isScheduled = NotificationScheduler.willScheduleNotification(for: event)
+                Image(systemName: isScheduled ? "bell.fill" : "bell")
+                    .font(.system(size: 10, weight: .bold))
+                    .foregroundStyle(FamilyTheme.accent.opacity(isScheduled ? 1 : 0.62))
+                    .frame(width: 22, height: 22)
+                    .background(FamilyTheme.accent.opacity(0.12), in: Circle())
+                    .padding(.top, 1)
+                    .accessibilityLabel(isScheduled ? "Notis schemalagd" : "Aktiviteten har en notisregel")
             }
         }
         .padding(16)
